@@ -1,0 +1,31 @@
+.top-bar{
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-bar p{
+    margin: 5px;
+}
+
+.navbar-custom {
+    background-color: #fff;
+}
+
+.text-nav{
+    margin: 120px;
+    font-weight: bold;
+}
+
+.app-header{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin: 50px ;
+}
+
+.navbar-edit{
+    height: 100px;
+}

@@ -1,0 +1,176 @@
+.grid-container-2 {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.grid-item {
+  width: calc(60% - 10px);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; 
+  margin: 0 auto; 
+  cursor: pointer;
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.card-img .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.card:hover .card-img .front {
+  opacity: 0;
+}
+
+.card:hover .card-img .back {
+  opacity: 1;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h4 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 1em;
+  color: #007bff;
+}
+
+.container-text {
+  margin: 100px;
+  padding: 20px;
+}
+
+.container-text h3 {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+}
+
+.card-clothes {
+  cursor: pointer;
+  object-fit: cover;
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 200px;
+  padding-top: 0px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.card-img .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.card:hover .card-img .front {
+  opacity: 0;
+}
+
+.card:hover .card-img .back {
+  opacity: 1;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h4 {
+  margin: 10px 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.original-price {
+  font-size: 1em;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 1.2em;
+  color: #e60023;
+  font-weight: bold;
+}

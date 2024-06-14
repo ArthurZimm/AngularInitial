@@ -1,0 +1,30 @@
+.grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    justify-items: center;
+  }
+  
+  .grid-item {
+    width: calc(90% - 10px); 
+  }
+  
+  .card{
+    margin-top:30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
